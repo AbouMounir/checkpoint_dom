@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> checkpoint DOM </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_top">
+            <p> Panier </p>
+        </div>
+        <table >
+            <thead>
+                <tr>
+                    <th> Nom de l'article </th>
+                    <th> Quantité </th>
+                    <th> Price unitaire </th>
+                    <th> Sous total </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="article">
+                        <p> Sac de riz</p>
+                        <p class="delete"> Supprimer </p>
+                    </td>
+                    <td>
+                        <div class="quantity_container">
+                            <div class="minus" onclick="minus_function()"> - </div>
+                            <div class="quantity"> <p class="number"> 4 </p> </div>
+                            <div class="plus"> + </div>
+                        </div>
+                    </td>
+                    <td> <span class="prix"> 15000 </span> fr </td>
+                    <td class="prix_total">  </td>
+                </tr>
+                <tr>
+                    <td class="article">
+                        <p> Stylo </p>
+                        <p class="delete"> Supprimer </p>
+                    </td>
+                    <td>
+                        <div class="quantity_container">
+                            <div class="minus" onclick="minus_function()"> - </div>
+                            <div class="quantity"> <p class="number"> 0 </p></div>
+                            <div class="plus"> + </div>
+                        </div>
+                    </td>
+                    <td> <span class="prix">  100 </span> fr </td>
+                    <td class="prix_total">  </td>
+                </tr>
+                <tr>
+                    <td class="new_article"> <p>stylo</p></td>
+                    <td class="price_new_article"> <p> 100 </p></td>
+                    <td> </td>
+                    <td> <div class="add"> <p> Ajouter un article </p> </div> </td>
+                </tr>
+            </tbody>
+
+        </table>
+        <div class="total">
+            <p> Total</p>
+            <div class="sum"> 0 </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
