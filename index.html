@@ -23,7 +23,7 @@
                     <th> Sous total </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="all_products">
                 <tr>
                     <td class="article">
                         <p> Sac de riz</p>
@@ -32,12 +32,12 @@
                     <td>
                         <div class="quantity_container">
                             <div class="minus"> - </div>
-                            <div class="quantity"> <p class="number"> 4 </p></div>
+                            <input type="number" class="quantity" readonly placeholder="Unit price" value="1" >
                             <div class="plus"> + </div>
                         </div>
                     </td>
-                    <td> <span class="prix"> 15000 </span> fr </td>
-                    <td> <span class="prix_total"> </span> fr </td>
+                    <td class="prix">  15000 fr </td>
+                    <td class="prix_total"> 15000 fr </td>
                 </tr>
                 <tr>
                     <td class="article">
@@ -47,30 +47,35 @@
                     <td>
                         <div class="quantity_container">
                             <div class="minus"> - </div>
-                            <div class="quantity"> <p class="number"> 2 </p></div>
+                            <input type="number" class="quantity" readonly placeholder="Unit price" value="1" >
                             <div class="plus"> + </div>
                         </div>
                     </td>
-                    <td> <span class="prix">  100 </span> fr </td>
-                    <td> <span class="prix_total"> </span> fr </td>
-                </tr>
-                <tr>
-                    <td class="new_article"> <p>stylo</p></td>
-                    <td class="price_new_article"> <p> 100 </p></td>
-                    <td> </td>
-                    <td> <div class="add"> <p> Ajouter un article </p> </div> </td>
+                    <td class="prix">  100 fr </td>
+                    <td class="prix_total"> 100 fr </td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr class="add_box">
+                    <td> <input type="text" class="new_article" placeholder="Nom de l'article" contenteditable=""></td>
+                    <td> 
+                        <input type="number" class="price_new_article" step="1" value="1000" contenteditable>
+                    </td>
+                    <td> </td>
+                    <td> <div class="add"> Ajouter un article </div> </td>
+                </tr>
+            </tfoot>
 
         </table>
         
+        
         <div class="total"> 
             <p> Total</p>
-            <div> <span class="sum"> 0 </span> fr </div>
+            <div class="sum"> 0 fr </div>
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="dom.js"></script>
 
 </body>
 

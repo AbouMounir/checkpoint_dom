@@ -15,8 +15,12 @@
     font-weight: bold;
 }
 table{
-    table-layout: fixed;
+    table-layout :fixed;
     width: 100%;
+}
+
+td{
+    margin: 20px 0 20px 0;
 }
 thead th:nth-child(1){
     width: 35%;
@@ -31,13 +35,7 @@ thead th:nth-child(3){
 thead th:nth-child(4){
     width: 15%;
 }
-td{
-    margin: 20px 0 20px 0;
-}
-tbody tr:nth-child(3){
-    padding: 20px;
-    height: 35px;
-}
+
 .delete{
     color: red;
     font-weight: bold;
@@ -69,22 +67,16 @@ tbody tr:nth-child(3){
 .quantity{
     border: 1px solid lightgray;
     height: 40px;
-    width: 20%;
-    position: relative;
+    width: 30%;
+    text-align: center;
 }
-.quantity *{
-    position: absolute;
-    top : 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+
 .add{
     padding-left: 5px;
     height: 25px;
     color: white;
     font-weight: bold;
     background-color: lightblue;
-    height: 20px;
     border-radius: 15px;
 }
 .new_article p{
@@ -93,7 +85,7 @@ tbody tr:nth-child(3){
 .price_new_article p{
     width: 30%;
 }
-.new_article p, .price_new_article p{
+.new_article , .price_new_article{
     border: 1px  solid lightgray;
     height: 25px;
     padding-left: 5%;
